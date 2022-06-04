@@ -263,19 +263,19 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    right: 100px;
-    top: 305px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 2s ease;
+    left: 45%;
+    bottom: -60%;
 }
 p.donealert {
     color: green;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 i.fa-solid.fa-circle-check {
     color: green;
-    font-size: 3.3em;
+    font-size: 2em;
 }
 .colr {
     width: 20px;
