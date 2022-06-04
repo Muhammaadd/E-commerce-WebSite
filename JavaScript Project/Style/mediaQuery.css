@@ -1,0 +1,29 @@
+@media (max-width:500px)
+{
+    h2{
+        font-size: 3em;
+    }
+    #products {
+        padding: 0 20px;
+    }
+    .contact a {
+        font-size: .9em; 
+    }
+}
+@media (max-width:720px)
+{
+    #home p.col-12 {
+        font-size: 1em;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .mainheading {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    #home {
+        padding: 40px;
+    }
+}
+
+

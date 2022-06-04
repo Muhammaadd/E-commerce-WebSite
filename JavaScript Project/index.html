@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/mediaQuery.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Start header -->
+    <header class="px-3 py-3 px-md-5 d-flex col-12 align-items-center justify-content-between">
+        <a href="#" class="col-1 text-decoration-none">MeGz</a>
+        <nav class="offset-1 col-7 d-none d-sm-block ">
+            <ul class="d-flex list-unstyled justify-content-between">
+                <a href="#home"><li>Home</li></a>
+                <a href="#products"><li id="">Women</li></a>
+                <a href="#products"><li id="">Men</li></a>
+                <a href="#products"><li id="">Sale</li></a>
+                <a href="About.html" target="_blank"><li>About</li></a>
+                <a href="contact.html" target="_blank"><li>Contact</li></a>
+            </ul>
+        </nav>
+        <a class="login col-6 col-sm-2 d-none d-sm-flex justify-content-end align-items-center">
+        <i class="fa-solid fa-user"></i>
+        <span>Log In</span>
+        </a>
+        <i id="navbar" class="fa-solid fa-bars d-sm-none"></i>
+    <!-- start navbar list -->
+        <ul class="navbarlist d-sm-none p-0 col-12">
+            <a href="#home"><li>Home</li></a>
+            <a href="#products"><li id="">Women</li></a>
+            <a href="#products"><li id="">Men</li></a>
+            <a href="#products"><li id="">Sale</li></a>
+            <a href="About.html" target="_blank"><li>About</li></a>
+            <a href="contact.html" target="_blank"><li>Contact</li></a>
+        </ul>
+    <!-- end navbar list -->
+    </header>
+    <!-- End Header -->
+    <!-- start Slider -->
+    <section class="col-12">
+        <!-- <h1 class="d-flex justify-content-center">Megz</h1>
+        <div class="orangeLine"></div> -->
+        <div class="slider">
+            <i id="arrowLeft" class="fa-solid fa-arrow-left"></i>
+            <img src="images/3.jpg" alt="">
+            <i id="arrowRight" class="fa-solid fa-arrow-right"></i>
+            <i id="play" class="fa-solid fa-play"></i>
+            <!-- <i class="fa-solid fa-pause"></i> -->
+        </div>
+        <div class="shape">
+            <h2 class="d-flex justify-content-center">How Are We ?</h2>
+            <div class="orangline"></div>
+        </div>
+    </section>
+    <!-- end slider -->
+    <!-- home section -->
+    <section id="home" class="d-flex">
+        <i id="uparrow" class="fa-solid fa-circle-arrow-up"></i>
+        <div class="content col-sm-12 col-lg-7">
+            <div class="line d-inline-block"></div>
+            <p class="d-inline-block">Committed to success</p>
+            <h1 class="mainheading">Here, You will find that you need</h1>
+            <p class="hcontent col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam necessitatibus, at accusantium sapiente odit eaque placeat, dolor eveniet quae mollitia incidunt itaque tempora eum totam quibusdam culpa excepturi minima dolorem.</p>
+            <a id="aboutUs" href="#">Learn About Us</a>
+        </div>
+        </section>
+    <!-- end home section -->
+    <!-- products section -->
+    <section id="products" class="px-2">
+        <div class="semanticheader px-5 px-md-3 d-flex justify-content-between align-items-center">
+        <div class="logo d-flex col-2 col-md-6 col-lg-6">
+            <div class="Megz d-inline-block">MEGZ</div> 
+            <div class="input-group d-none d-md-flex">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">search</button>
+            </div>
+        </div>
+        <nav class="col-10 col-sm-7 col-md-5 col-lg-4">
+            <ul class="productsSection d-flex justify-content-between">
+                <a href="#products"><li id="shopall">Shop All</li></a>
+                <a href="#products"><li id="women">Women</li></a>
+                <a href="#products"><li id="men">Men</li></a>
+                <a href="#products"><li id="sale">Sale</li></a>
+            </ul>
+        </nav>
+    </div>
+        <div class="shape">
+            <h2 id="categoryheading" class="d-flex justify-content-center">Shop All</h2>
+            <div class="orangline"></div>
+        </div>
+            <!-- product -->
+            <div class="product p-3 position-relative col-12 col-sm-6 col-md-4 col-lg-3">
+                <span class="position-absolute">Best Seller</span>
+                <div class="temp"><img class="productImg" src="images/product1.jpg" alt=""></div>
+                <p class="productContent">I'm a Product</p>
+                <p class="productPrice">$25.00</p>
+            </div>
+            <!-- end product -->
+            <!-- start products flex -->
+            <div id="productscontainer" class="productscontainer px-1 d-flex flex-wrap justify-content-center">
+                
+            </div>
+            <!-- end products flex -->
+    </section>
+    <!-- end product section -->
+    <section id="contact" class="contact">
+        <div class="    ">
+            <!-- <h1 class="special-heading">contact</h1> -->
+            <p class="special-paragraph">we are born to create</p>
+            <p>Feel free to drop us a line at:</p>
+            <a class="d-none d-sm-block" href="mailto:mohamed.abdelrazek.std@cis.asu.ed.eg">mohamed.abdelrazek.std@cis.asu.ed.eg</a>
+            <div class="contact-icons"> 
+                <p>Find Us On Social Networks</p>
+                <div class="iconat">
+                    <a href="https://www.facebook.com/profile.php?id=100005439373478" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="http://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+    <!-- start footer  -->
+    <footer>
+        <h5>© 2021 <span>Leon</span> All Right Reserved</h5>
+    </footer>
+    <!-- end footer  -->
+<script src="script/java.js"></script>
+</body>
+</html>
