@@ -4,6 +4,7 @@ var current = document.getElementById("current");
 cardimg.setAttribute("src",localStorage.getItem("src"));
 current.onclick = function(){
     cardimg.setAttribute("src",localStorage.getItem("src"));
+    setborder();
 };
 ////// end
 // opacity animation of page
@@ -34,6 +35,7 @@ function setborder(numberOfcolor){
     {
         colors[i].style.outline = 0;
     }
+    if(numberOfcolor != undefined)
     colors[numberOfcolor].style.outline = "1px solid black";
 }
 ///// end
