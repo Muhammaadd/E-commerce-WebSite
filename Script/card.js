@@ -1,6 +1,10 @@
 // set image of the selected product
 var cardimg = document.getElementById("cardimg");
+var current = document.getElementById("current");
 cardimg.setAttribute("src",localStorage.getItem("src"));
+current.onclick = function(){
+    cardimg.setAttribute("src",localStorage.getItem("src"));
+};
 ////// end
 // opacity animation of page
 var cardsection = document.querySelector(".card");

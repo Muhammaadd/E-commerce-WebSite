@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/mediaQuery.css">
     <title>Document</title>
 </head>
 <body>
-    <section id="products" class="card" style="margin-top:20px;">
+    <section id="products" class="card py-2 py-md-5 px-1 px-md-5" style="margin-top:20px;">
         <!-- header -->
-        <div class="semanticheader mb-5 d-flex col-12 align-items-center">
-        <div class="logo d-flex col-4">
+        <div class="semanticheader mb-5 d-flex col-12 align-items-center justify-content-between">
+        <div class="logo d-flex col-2 col-md-3 col-lg-4">
             <div class="Megz d-inline-block">MEGZ</div> 
         </div>
-        <nav class="offset-4 col-4">
+        <nav class="col-8 col-sm-6 col-md-5 col-lg-4">
             <ul class="productsSection d-flex justify-content-between">
                 <a href="index.html#products"><li id="shopall">Shop All</li></a>
                 <a href="index.html#products"><li id="women">Women</li></a>
@@ -29,9 +30,11 @@
         </nav>
     </div>
     <!-- end header -->
-    <div class="productcard d-flex">
-        <img id="cardimg" src="-images/product1.jpg" alt="">
-        <div class="cardcontent offset-1 col-6 d-flex flex-column">
+    <div class="productcard d-flex justify-content-center flex-wrap">
+        <div class="imgofcardcontainer mb-5 pe-md-5 col-12 col-sm-7 col-md-5 col-lg-6">
+            <img class="" id="cardimg" src="-images/product1.jpg" alt="">
+        </div>
+        <div class="cardcontent col-10 col-md-7 col-lg-6 d-flex flex-column">
             <p class="introduce">I'm a Product</p>
             <div class="donemessage">
                 <i class="fa-solid fa-circle-check"></i>
@@ -39,6 +42,7 @@
             </div>
             <span>Sku: 0021</span>
             <span class="productPrice">$45.00</span>
+            <Span id="current">Current</Span>
             <span id="colorvalue">Color</span>
             <div class="productcolor d-flex">
                 <div id="fcol" class="colr"></div>

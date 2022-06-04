@@ -156,10 +156,6 @@ p.d-inline-block {
     width: 100%;
      opacity: ; 
   } */
-#products {
-    padding-top: 100px;
-    padding-bottom: 50px; 
-}
 #products a {
     color: black;
 }
@@ -248,9 +244,10 @@ h2 {
     color: var(--maincolor);
 }
 #cardimg {
-    width: 1000px;
-    height: 600px;
-    margin-left: 80px;
+    /* width: 1000px; */
+    /* height: 600px; */
+    /* margin-left: 80px; */
+    width: 100%;
 }
 .introduce {
     font-size: 2em;
@@ -259,7 +256,7 @@ h2 {
 .cardcontent * {
     margin-bottom: 15px;
     position: relative;
-}
+}   
 .donemessage {
     position: absolute;
     display: flex;
@@ -267,7 +264,7 @@ h2 {
     align-items: center;
     justify-content: center;
     right: 100px;
-    top: 205px;
+    top: 305px;
     opacity: 0;
     transition: opacity 2s ease;
 }
@@ -310,8 +307,11 @@ i.fa-solid.fa-circle-check {
     opacity: 0;
     transition: opacity 2s ease;
 }
-#colorvalue {
+#colorvalue,#current {
     font-weight: 800;
+}
+#current {
+    cursor: pointer;
 }
 .alertmessage {
     position: relative;
@@ -322,7 +322,6 @@ span#alert,#alert1 {
     background-color: #df3131;
     color: white;
     padding: 2px 10px;
-    position: absolute;
     border-radius: 2px;
     width: 100px;  
     text-align: center;

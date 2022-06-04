@@ -10,6 +10,14 @@
         font-size: .9em; 
     }
 }
+@media (max-width:600px)
+{
+    
+.cardcontent * {
+    margin-bottom: 7px;
+    }
+
+}
 @media (max-width:720px)
 {
     #home p.col-12 {
@@ -25,5 +33,24 @@
         padding: 40px;
     }
 }
-
-
+@media (max-width:767px)
+{
+    span#alert,#alert1 {
+        position: static;
+    }
+    .alertmessage i{
+        display: none;
+    }
+    .form-outline {
+        margin-bottom: -7px;
+    }
+    select.form-select {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width:600px)
+{
+    .form-outline {
+        margin-bottom: 0px;
+    }
+}
