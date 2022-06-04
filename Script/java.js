@@ -1,6 +1,6 @@
 // // Slider 
 var sliderImagesArray = ["3.jpg","1.jpg","2.jpg","4.jpg","5.jpg","6.jpg"];
-var sliderimg = document.querySelector(".slider img");
+var slider = document.getElementById("slider");
 var arrowleft = document.getElementById("arrowLeft");
 var arrowRight = document.getElementById("arrowRight");
 var playSymbol = document.getElementById("play");
@@ -10,14 +10,14 @@ arrowleft.onclick =function(){
         imgsourceIndex=5;
     else 
         imgsourceIndex --;
-    sliderimg.setAttribute("src",`images/${sliderImagesArray[imgsourceIndex]}`);
+    slider.style.backgroundImage = `url(../images/${sliderImagesArray[imgsourceIndex]})`;
+
 }
 arrowRight.onclick = function(){
     if(imgsourceIndex===5)
     imgsourceIndex=0;
     else imgsourceIndex++;
-    sliderimg.setAttribute("src",`images/${sliderImagesArray[imgsourceIndex]}`);
-    
+    slider.style.backgroundImage = `url(../images/${sliderImagesArray[imgsourceIndex]})`;    
 }
 var myinterval;
 function play() {
@@ -26,7 +26,7 @@ function play() {
             imgsourceIndex=0;
         else 
             imgsourceIndex++;
-        sliderimg.setAttribute("src",`images/${sliderImagesArray[imgsourceIndex]}`);
+    slider.style.backgroundImage = `url(../images/${sliderImagesArray[imgsourceIndex]})`;
     },1000);
 }
 playSymbol.onclick = function(){
