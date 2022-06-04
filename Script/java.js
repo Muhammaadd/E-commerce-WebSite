@@ -206,13 +206,11 @@ window.onscroll = function(){
 
 
 
-// shopall = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
-// womenProducts = ["10","11","12","13","14","15","16","17","1","2","3","4"];
-// menProducts = ["7","8","12","10","9","1","2","5","20","19","18","17"];
-// saleProducts = ["15","16","17","18","19","20","1","5","7","9","11","13"];
-// window.localStorage.setItem("womenProducts",womenProducts);
-// window.localStorage.setItem("menProducts",menProducts);
-// window.localStorage.setItem("saleProducts",saleProducts);
-// localStorage.setItem("shopall",shopall);
-
-// //finall
+shopall = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
+womenProducts = ["10","11","12","13","14","15","16","17","1","2","3","4"];
+menProducts = ["7","8","12","10","9","1","2","5","20","19","18","17"];
+saleProducts = ["15","16","17","18","19","20","1","5","7","9","11","13"];
+window.localStorage.setItem("womenProducts",womenProducts);
+window.localStorage.setItem("menProducts",menProducts);
+window.localStorage.setItem("saleProducts",saleProducts);
+localStorage.setItem("shopall",shopall);
