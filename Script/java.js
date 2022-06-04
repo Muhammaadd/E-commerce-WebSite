@@ -63,10 +63,7 @@ window.onload = function(){
 }
 function display(arrayname,opacity){
     productscontainer.innerText = "";
-    console.log("function is called");
     var arr = localStorage.getItem(arrayname).split(",");
-    console.log(arr);
-    console.log(arr.length);
     var newProductArray = [];
     for(var i=0;i<arr.length;i++)
     {
@@ -75,7 +72,6 @@ function display(arrayname,opacity){
         newProductArray[i].style.display = 'flex';
         newProductArray[i].style.opacity = opacity;
         productscontainer.appendChild(newProductArray[i]);
-        console.log(newProductArray[i]);
     }
     if(opacity!==1)
     {
@@ -87,7 +83,6 @@ function display(arrayname,opacity){
         },1000)
     }
     state = "Shop all";
-    console.log("display func");
 }
 
 // //////////end
@@ -124,7 +119,6 @@ function displayProducts(head,arrayname) {
         heading.innerText = head;
     },1000);
     state = head;
-    console.log("display products func");
 }
 //////////////////////////end
 
@@ -135,7 +129,6 @@ function setColor(categorynumber){
         categories[i].style.color = "black";
     }
     categories[categorynumber].style.color = "var(--maincolor)";
-    console.log("setColor func");
 }
 //////// end
 
