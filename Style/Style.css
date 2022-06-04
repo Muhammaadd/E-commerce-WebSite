@@ -80,11 +80,12 @@ h1 {
     background-image: url(../images/3.jpg);
     background-size: cover;
     background-position: center;
-}
+ }
+ /*
 .slider img {
     text-align: center;
     width: 100%;
-}
+} */
 .slider i {
     position: absolute;
     cursor: pointer;

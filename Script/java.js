@@ -10,14 +10,13 @@ arrowleft.onclick =function(){
         imgsourceIndex=5;
     else 
         imgsourceIndex --;
-    slider.style.backgroundImage = `url(../images/${sliderImagesArray[imgsourceIndex]})`;
-
+    slider.style.backgroundImage = `url(./images/${sliderImagesArray[imgsourceIndex]})`;
 }
 arrowRight.onclick = function(){
     if(imgsourceIndex===5)
     imgsourceIndex=0;
     else imgsourceIndex++;
-    slider.style.backgroundImage = `url(../images/${sliderImagesArray[imgsourceIndex]})`;    
+    slider.style.backgroundImage = `url(./images/${sliderImagesArray[imgsourceIndex]})`;    
 }
 var myinterval;
 function play() {
@@ -26,7 +25,7 @@ function play() {
             imgsourceIndex=0;
         else 
             imgsourceIndex++;
-    slider.style.backgroundImage = `url(../images/${sliderImagesArray[imgsourceIndex]})`;
+    slider.style.backgroundImage = `url(./images/${sliderImagesArray[imgsourceIndex]})`;
     },1000);
 }
 playSymbol.onclick = function(){
