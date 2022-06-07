@@ -61,11 +61,12 @@ cardbtn.onclick = function(){
     }
     else
     {
+        if(!localStorage.numberofproducts)
+            localStorage.numberofproducts = 0;
         if(localStorage.getItem("quantity"))
             localStorage.setItem("quantity",parseInt(localStorage.getItem("quantity")) + quantity);
         else
             localStorage.setItem("quantity",quantity);
-
         selectedProductInfo[0] = cardimg.getAttribute('src');
         selectedProductInfo[1] = size[0].value;
         selectedProductInfo[2] = quantity;
