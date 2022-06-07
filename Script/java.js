@@ -206,3 +206,5 @@ window.localStorage.setItem("womenProducts",womenProducts);
 window.localStorage.setItem("menProducts",menProducts);
 window.localStorage.setItem("saleProducts",saleProducts);
 localStorage.setItem("shopall",shopall);
+if(!localStorage.totalOrders)
+    localStorage.totalOrders = 0;
